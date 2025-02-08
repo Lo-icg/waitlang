@@ -1,0 +1,102 @@
+/* Body with a gradient background and centered content in a column layout */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('luxury-nature-green.jpg');
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header styling */    
+.header {
+    padding: 10px;
+    margin-bottom: 10px; /* Space below the header */
+}
+
+/* Header paragraph styling */
+.header p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Chat container with updated width, padding, and shadow */
+.chat-container {
+    width: 400px;
+    background: rgb(47, 116, 93);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Chat box with flex layout for vertical stacking of messages */
+.chat-box {
+    height: 350px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #89c2bd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Base style for each message */
+.message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+/* Sent messages: align to the right */
+.message.sent {
+    background: #007bff;
+    align-self: flex-end;
+}
+
+/* Received messages: align to the left */
+.message.received {
+    background: #c134ba;
+    align-self: flex-start;
+}
+
+/* Input container styling with spacing between elements */
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Input field styling */
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Send button styling with transition and hover effect */
+.input-container button {
+    background: #2961a1;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+.input-container button:hover {
+    background: rgb(60, 47, 116);
+}
