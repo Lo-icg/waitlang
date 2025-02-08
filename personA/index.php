@@ -20,6 +20,11 @@
   
   <!-- Define the sender for this site -->
   <script> const user = "UserA"; </script>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>
