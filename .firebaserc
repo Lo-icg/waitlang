@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "chatchatnalang"
+  },
+  "targets": {
+    "chatchatnalang": {
+      "hosting": {
+        "userA-site": [
+          "usera-site"
+        ],
+        "userB-site": [
+          "userb-site"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
